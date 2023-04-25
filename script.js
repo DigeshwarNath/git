@@ -1,17 +1,19 @@
-var hr = 0;
-var min = 0;
-var sec = 0;
-var count = 0;
-var timer = false; 
+var hr = 0;  // initially assigning a variable hour to 0 
+var min = 0;  // initially assign a variable Minute to 0
+var sec = 0;  // initially assign a variable Second to 0
+var count = 0; // initially assign a varriable count to 0
+var timer = false; // initially timer is false when we start the stopwatch then it will true
 
-function start(){
+function start(){    // we have created a function name start()
    timer = true;
-   stopwatch1();
+   stopwatch1();     // call function stopwatch1()
 }
-function stop(){
+
+function stop(){    // another function name stop()
     timer=false;
 }
-function reset(){
+
+function reset(){   // another function name reset()
      timer=false;
      hr=0;
      min=0;
@@ -24,21 +26,22 @@ function reset(){
 }
 function stopwatch1(){
     if(timer == true){
-        count = count+1;
+        count = count+1;  //whenever timer is true count is incremented to count+1 
 
-        if(count == 100){
+        if(count == 100){  //when count is achived their hundreth part then it become zero and second in increse to sec+1
             sec = sec+1;
             count = 0;
         }
-        if(sec == 60){
+        if(sec == 60){     //when second is achived to 60 then it will become zero and minute is increse to min+1
             min = min+1;
             sec=0;
         }
-        if(min == 60){
+        if(min == 60){    //when min is achived to 60 then it will become zero and hour is increase to hr+1
             hr = hr+1;
             min = 0;
             sec = 0;
         }
+       // take a 4variables as hrString, minString, secString, countString to store the value of Hour, Minute, Second and Count
         var hrString = hr;
         var minString = min;
         var secString = sec;
