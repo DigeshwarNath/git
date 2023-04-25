@@ -5,11 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Stopwatch</title>
-        <link rel="stylesheet" href="style.css">
+        
+        <! -- link the html code to css for styling our stopwatch -->
+        <link rel="stylesheet" href="style.css">  
     </head>
     <body>
+        
+        <! -- this is the main container -->
         <div id="container">
+            <! -- this is for time Hour, Minute, Second and count for the hundred part of the second -->
             <div id="time">
+                <! -- we created a two class digit and text and giving a id to that class -->
                 <span class="digit" id="hr">00</span> 
                 <span class="txt">Hr</span> 
                 <span class="digit" id="min">00</span>
@@ -18,12 +24,14 @@
                 <span class="txt">Sec</span> 
                 <span class="digit" id="count">00</span>
             </div>
+            <! -- Here we take a button container and inside these we make class name btn -->
             <div id="btn-container">
                 <button class="btn" id="start" onclick="start()">Start</button>
                 <button class="btn" id="stop" onclick="stop()">Stop</button>
                 <button class="btn" id="reset" onclick="reset()">Reset</button>
             </div>
         </div>
+        <! -- here is the path of the javascript -->
         <script src="script.js"></script>
         
     </body>
