@@ -1,3 +1,4 @@
+<! --we are using a flex so that our stopwatch comes in the center -->
 body{
     background-color: black;
     display:flex;
