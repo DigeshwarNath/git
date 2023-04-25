@@ -46,8 +46,9 @@ function stopwatch1(){
         var minString = min;
         var secString = sec;
         var countString = count;
-
-        if(hr < 0){
+       
+        //we using a if condition because our stopwatch will lool like 00hr 00min 00sec 00
+        if(hr < 10){
             hrString = "0" + hrString;
         }
         if(min < 10){
